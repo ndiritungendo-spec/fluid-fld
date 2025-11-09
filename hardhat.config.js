@@ -6,11 +6,11 @@ module.exports = {
   defaultNetwork: "polygon",
   networks: {
     polygon: {
-      url: process.env.ALCHEMY_POLYGON_URL,
+      url: process.env.ALCHEMY_API_URL,
       accounts: [process.env.PRIVATE_KEY]
     },
     mumbai: { // testnet
-      url: process.env.ALCHEMY_POLYGON_URL.replace("polygon-mainnet", "polygon-mumbai"),
+      url: process.env.ALCHEMY_API_URL.replace("polygon-mainnet", "polygon-mumbai"),
       accounts: [process.env.PRIVATE_KEY]
     }
   }
